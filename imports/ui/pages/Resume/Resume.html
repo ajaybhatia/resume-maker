@@ -1,0 +1,191 @@
+<template name="Resume">
+
+	<div class="col-sm-3 col-md-3 well well-lg full">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-sm-offset-3 col-md-offset-3">
+				<img class="img img-circle img-profile" src="https://organicthemes.com/demo/profile/files/2012/12/profile_img.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-center"><h3 class="title"></h3></div>
+		</div>
+	</div>
+
+	<div class="col-sm-9 col-md-9 main-information">
+
+		<form action="" method="POST" role="form">
+			<legend>
+				<h2 class="text-muted">
+					Personal Information
+				</h2>
+			</legend>
+
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label for="first-name">First Name</label>
+					<input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label for="last-name">Last Name</label>
+					<input type="text" class="form-control" id="last-name" placeholder="Last Name">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="address">Address</label>
+					<textarea class="form-control" id="address" rows="4" placeholder="Address" required></textarea>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label for="email">Email</label>
+					<input class="form-control" type="email" id="email" placeholder="johndoe@gmail.com" required>
+				</div>
+
+				<div class="form-group col-md-6">
+					<label for="phone-number">Phone Number</label>
+					<input class="form-control" type="number" id="phone-number" placeholder="9999999999" required>
+				</div>
+			</div>
+
+			<legend>
+				<h2 class="text-muted">
+					Career Objectives
+				</h2>
+			</legend>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="objective">Career Objective</label>
+					<textarea class="form-control" id="objective" rows="4" placeholder="Your Career Objective"></textarea>
+				</div>
+			</div>
+
+			<legend>
+				<h2 class="text-muted">
+					Professional Experience
+				</h2>
+			</legend>
+
+			<div class="row">
+				<div class="form-group col-md-12">
+					<div class="radio radio-experience">
+						<label>
+							<input type="radio" name="experience" id="fresher" value="Fresher" checked="checked">
+							Fresher
+						</label>
+						<label>
+							<input type="radio" name="experience" id="professional" value="Professional" checked="checked">
+							Professional
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row block-professional">
+				<!-- Professional Experience -->
+			</div>
+
+			<legend>
+				<h2 class="text-muted">
+					Education
+				</h2>
+			</legend>
+
+			<div class="row">
+				<div class="form-group col-md-3">
+					<label for="matric-school-name">Matric School Name</label>
+					<input class="form-control" type="text" id="matric-school-name" placeholder="School Name" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="matric-board-name">Matric Board Name</label>
+					<input class="form-control" type="text" id="matric-board-name" placeholder="Board Name e.g. PSEB" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="matric-passing-year">Passing Year</label>
+					<input class="form-control" type="number" id="matric-passing-year" placeholder="2010" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="matric-percentage">Percentage/CGPA/Grade</label>
+					<input class="form-control" type="text" id="matric-percentage" placeholder="70% or 8.5 or A+" required>
+				</div>
+			</div>
+
+			{{!-- <div class="row">
+				<div class="form-group col-md-3">
+					<label for="ss-school-name">Senior Secondary School Name</label>
+					<input class="form-control" type="text" id="ss-school-name" placeholder="School Name" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="ss-board-name">Senior Secondary Board Name</label>
+					<input class="form-control" type="text" id="ss-board-name" placeholder="Board Name e.g. PSEB" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="ss-passing-year">Passing Year</label>
+					<input class="form-control" type="number" id="ss-passing-year" placeholder="2010" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="ss-percentage">Percentage/CGPA/Grade</label>
+					<input class="form-control" type="text" id="ss-percentage" placeholder="70% or 8.5 or A+" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-3">
+					<label for="graduation-school-name">Graduation School Name</label>
+					<input class="form-control" type="text" id="graduation-school-name" placeholder="Institute or College Name" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="graduation-board-name">Graduation Board Name</label>
+					<input class="form-control" type="text" id="graduation-board-name" placeholder="Board Name e.g. PU" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="graduation-passing-year">Passing Year</label>
+					<input class="form-control" type="number" id="graduation-passing-year" placeholder="2010" required>
+				</div>
+				<div class="form-group col-md-3">
+					<label for="grad-percentage">Percentage/CGPA/Grade</label>
+					<input class="form-control" type="text" id="grad-percentage" placeholder="70% or 8.5 or A+" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-group col-md-3">
+					<label for="pg-school-name">Post-graduation School Name</label>
+					<input class="form-control" type="text" id="pg-school-name" placeholder="Institute or College Name">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="pg-board-name">Post-graduation Board Name</label>
+					<input class="form-control" type="text" id="pg-board-name" placeholder="Board Name e.g. PU">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="passing-year">Passing Year</label>
+					<input class="form-control" type="number" id="passing-year" placeholder="2010">
+				</div>
+				<div class="form-group col-md-3">
+					<label for="pg-percentage">Percentage/CGPA/Grade</label>
+					<input class="form-control" type="text" id="pg-percentage" placeholder="70% or 8.5 or A+">
+				</div>
+			</div> --}}
+
+			<legend>
+				<h2 class="text-muted">
+					Additonal Skills
+				</h2>
+			</legend>
+
+			<legend>
+				<h2 class="text-muted">
+					Awards and Honours
+				</h2>
+			</legend>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+	</div>
+
+</template>

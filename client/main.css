@@ -1,0 +1,22 @@
+/* CSS declarations go here */
+
+.full {
+	height: 100vh;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.img-profile {
+	width: 100%;
+}
+
+.title {
+	font-weight: 400;
+	font-variant: small-caps;
+}
+
+.main-information {
+	padding: 0 100px;
+}
